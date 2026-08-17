@@ -1,14 +1,18 @@
+CREATE DATABASE restaurante;
+USE restaurante;
+
 CREATE TABLE usuarios (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL
 );
 
 CREATE TABLE pratos (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    descricao TEXT,
-    preco DECIMAL(10, 2) NOT NULL,
-    categoria VARCHAR(50),
-    usuario_id INT REFERENCES usuarios(id)
+    descricao TEXT NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    categoria VARCHAR(50) NOT NULL,
+    usuario_id INT NOT NULL,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
