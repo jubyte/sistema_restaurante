@@ -23,9 +23,9 @@ $resultado = $conexao->query($sql);
 <body>
     <h1>Pratos cadastrados</h1>
 
-    <a href="cadastrar_usuario.php">Cadastrar usuário</a>
-    <a href="cadastrar_prato.php">Cadastrar prato</a>
-    <a href="pratos_usuario.php">Pratos por usuário</a>
+    <a href="public/cadastrar_usuario.php">Cadastrar usuário</a>
+    <a href="public/cadastrar_prato.php">Cadastrar prato</a>
+    <a href="public/pratos_usuario.php">Pratos por usuário</a>
 
     <table border="1">
 
