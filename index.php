@@ -1,6 +1,6 @@
 <?php
 
-include "../infra/conexao.php";
+include "infra/conexao.php";
 
 $sql = "SELECT pratos.*, usuarios.nome AS usuario_nome
     FROM pratos
