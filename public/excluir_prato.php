@@ -10,5 +10,4 @@ $stmt->bind_param("i", $id);
 $stmt->execute();
 
 header("Location: ../index.php");
-exit();
 ?> 
