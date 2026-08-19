@@ -27,7 +27,7 @@ Com o Apache e o MySQL funcionando, abra o navegador e acesse: `http://localhost
 
 As operações que recebem informações digitadas pelo usuário utilizam **Prepared Statements**. Isso ajuda a deixar as operações com o banco de dados mais seguras e evita problemas como SQL Injection.
 
-# Requisitos Funcionais e Não Funcionais
+## Requisitos Funcionais e Não Funcionais
 
 RF1 — Cadastrar usuário: O sistema deve permitir cadastrar usuários informando nome e e-mail.
 
